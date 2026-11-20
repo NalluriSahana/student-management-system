@@ -1,0 +1,125 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    padding: 30px;
+    color: #263247;
+}
+
+h1 {
+    text-align: center;
+    color: #243b55;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+h2 {
+    color: #243b55;
+    margin: 20px 0;
+}
+
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 550px;
+    margin: 0 auto 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccd3df;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4169e1;
+}
+
+button {
+    background: #3157c8;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 3px;
+}
+
+button:hover {
+    background: #243b9b;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    margin-top: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #e1e5ec;
+}
+
+th {
+    background: #243b55;
+    color: white;
+}
+
+td button:last-child {
+    background: #dc3545;
+}
+
+td button:last-child:hover {
+    background: #b02a37;
+}
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+}
