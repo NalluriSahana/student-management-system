@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Student Management System</h1>
+
+    <h2>Add Student</h2>
+
+    <form id="studentForm">
+
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Enter Name" required>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" id="email" placeholder="Enter Email" required>
+        <br><br>
+
+        <label>Age:</label>
+        <input type="number" id="age" placeholder="Enter Age" required>
+        <br><br>
+
+        <label>Course:</label>
+        <input type="text" id="course" placeholder="Enter Course" required>
+        <br><br>
+
+        <button type="submit">Add Student</button>
+
+    </form>
+
+    <h2>Student Details</h2>
+    <button id="exportBtn">Export Students</button>
+    <div class="dashboard">
+
+        <div class="dashboard-card">
+            <h3>Total Students</h3>
+            <h2 id="studentCount">0</h2>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Total Courses</h3>
+            <h2 id="courseCount">0</h2>
+        </div>
+
+    </div>
+    <input type="text" id="searchInput" placeholder="Search student by name...">
+    <select id="sortStudents">
+        <option value="">Sort Students</option>
+        <option value="asc">Name (A to Z)</option>
+        <option value="desc">Name (Z to A)</option>
+    </select>
+    <select id="courseFilter">
+        <option value="">All Courses</option>
+    </select>
+
+    <table border="1" cellpadding="10">
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Course</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentTable">
+        </tbody>
+
+    </table>
+    <div class="pagination">
+        <button id="previousBtn">Previous</button>
+        <span id="pageNumber">Page 1</span>
+        <button id="nextBtn">Next</button>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
